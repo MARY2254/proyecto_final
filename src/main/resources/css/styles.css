@@ -1,0 +1,13 @@
+.text-field-error {
+    -fx-border-color: red;
+    -fx-border-width: 2;
+}
+
+src/main/java
+  ├── pe/edu/upeu/parisfx
+  │       ├── GUIMainFX.java
+  │       └── control
+  │              └── ProductoController.java
+src/main/resources
+  ├── view
+  │       └── main_producto.fxml

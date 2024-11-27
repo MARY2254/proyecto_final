@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="miproveedor" prefHeight="277.0" prefWidth="868.0" style="-fx-background-color: f8dd7c;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.parisfx.control.ProveedorController">
+
+    <children>
+      <ImageView fitHeight="277.0" fitWidth="256.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/crema papel.jpg" />
+         </image>
+      </ImageView>
+        <TextField fx:id="txtDniRuc" layoutX="14.0" layoutY="37.0" promptText="DNI/RUC" />
+        <TextField fx:id="txtNombresRaso" layoutX="14.0" layoutY="72.0" promptText="Nombre o Razón Social" />
+        <TextField fx:id="txtTipoDoc" layoutX="14.0" layoutY="107.0" promptText="Tipo de Documento" />
+        <TextField fx:id="txtCelular" layoutX="14.0" layoutY="142.0" promptText="Celular" />
+        <TextField fx:id="txtEmail" layoutX="14.0" layoutY="177.0" promptText="Email" />
+        <TextField fx:id="txtDireccion" layoutX="14.0" layoutY="212.0" promptText="Dirección" />
+
+        <Button layoutX="14.0" layoutY="250.0" onAction="#handleSave" text="Guardar" />
+        <Button layoutX="85.0" layoutY="250.0" onAction="#handleDelete" text="Eliminar" />
+        <Button layoutX="156.0" layoutY="250.0" onAction="#handleEdit" text="Editar" />
+
+        <ImageView fitHeight="74.0" fitWidth="166.0" layoutX="614.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/PARIS.png" />
+            </image>
+        </ImageView>
+
+        <Label fx:id="lbnMsg" maxHeight="1.7976931348623157E308" prefHeight="34.0" prefWidth="256.0" />
+
+        <TableView fx:id="tableViewProveedores" layoutX="259.0" layoutY="81.0" prefHeight="180.0" prefWidth="593.0">
+
+
+            <columns>
+                <TableColumn fx:id="colDniRuc" text="DNI/RUC" />
+                <TableColumn fx:id="colNombresRaso" text="Nombre/Razón Social" />
+                <TableColumn fx:id="colTipoDoc" text="Tipo de Documento" />
+                <TableColumn fx:id="colCelular" text="Celular" />
+                <TableColumn fx:id="colEmail" text="Email" />
+                <TableColumn fx:id="colDireccion" text="Dirección" />
+            </columns>
+        </TableView>
+      <Label layoutX="180.0" layoutY="17.0" prefHeight="40.0" prefWidth="406.0" text="Registro de Proveedores París">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

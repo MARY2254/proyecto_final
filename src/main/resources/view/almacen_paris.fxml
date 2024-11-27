@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="miContenedor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="380.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.parisfx.control.AlmacenController">
+    <children>
+        <AnchorPane prefHeight="152.0" prefWidth="702.0">
+            <children>
+            <ImageView fitHeight="215.0" fitWidth="702.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../img/crema papel.jpg" />
+               </image>
+            </ImageView>
+                <Button alignment="TOP_LEFT" layoutX="386.0" layoutY="69.0" onAction="#validarFormulario" prefHeight="25.0" prefWidth="87.0" text="Agregar" />
+                <Button alignment="TOP_LEFT" layoutX="387.0" layoutY="104.0" onAction="#clearForm" prefHeight="25.0" prefWidth="87.0" text="Cancelar" />
+                <Label layoutX="104.0" prefHeight="50.0" prefWidth="361.0" text="Almacén de Abrigos" textFill="#d7bb66">
+               <font>
+                  <Font name="System Bold Italic" size="34.0" />
+               </font></Label>
+                <Label layoutX="21.0" layoutY="68.0" prefHeight="25.0" prefWidth="150.0" text="Nombre del abrigo :">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label layoutX="10.0" layoutY="113.0" prefHeight="19.0" prefWidth="150.0" text="Descripción de prenda :">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+                <TextField fx:id="txtDescripcion" layoutX="163.0" layoutY="105.0" prefHeight="36.0" prefWidth="216.0" promptText="Descripción" />
+                <TextField fx:id="txtNombreAlmacen" layoutX="163.0" layoutY="58.0" prefHeight="37.0" prefWidth="216.0" promptText="Nombre de prenda" />
+            <ImageView fitHeight="116.0" fitWidth="245.0" layoutX="481.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/PARIS.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="15.0" layoutX="450.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/correcto.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="450.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/error.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="-2.0" layoutY="150.0" prefHeight="230.0" prefWidth="704.0" style="-fx-background-color: f8dd7c;">
+            <children>
+                <TableView fx:id="almacenTable" layoutX="14.0" layoutY="14.0" prefHeight="196.0" prefWidth="680.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

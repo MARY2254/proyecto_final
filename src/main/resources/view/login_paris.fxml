@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.parisfx.control.LoginController">
+
+    <children>
+        <AnchorPane prefHeight="402.0" prefWidth="226.0">
+            <children>
+                <ImageView fitHeight="411.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/chica.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="268.0" prefHeight="405.0" prefWidth="353.0">
+            <children>
+                <ImageView fitHeight="404.0" fitWidth="392.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/crema papel.jpg" />
+                    </image>
+                </ImageView>
+                <AnchorPane layoutX="41.0" layoutY="33.0" prefHeight="332.0" prefWidth="288.0" style="-fx-background-color: f8dd7c; -fx-border-radius: 4;">
+                    <children>
+                        <ImageView fitHeight="119.0" fitWidth="232.0" layoutX="48.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/PARIS.png" />
+                            </image>
+                        </ImageView>
+                        <AnchorPane layoutX="15.0" layoutY="126.0" prefHeight="63.0" prefWidth="262.0" style="-fx-border-color: afa700; -fx-border-radius: 8;">
+                            <children>
+                                <Label layoutX="14.0" layoutY="23.0" text="Usuario :" />
+                                <TextField fx:id="txtUsuario" layoutX="99.0" layoutY="19.0" promptText="user name" />
+                            </children></AnchorPane>
+                        <AnchorPane layoutX="15.0" layoutY="208.0" prefHeight="63.0" prefWidth="262.0" style="-fx-border-color: afa700; -fx-border-radius: 8;">
+                            <children>
+                                <Label layoutX="14.0" layoutY="23.0" text="Contraseña :" />
+                                <PasswordField fx:id="txtClave" layoutX="99.0" layoutY="19.0" promptText="password" />
+                            </children></AnchorPane>
+                        <Button fx:id="btnIngresar" layoutX="186.0" layoutY="288.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: afa700;" text="Iniciar">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font></Button>
+                    </children></AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
